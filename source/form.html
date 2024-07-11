@@ -50,64 +50,63 @@
 
 
 
-
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label" for="name">Имя:*</label>
-              <input class="form__field" type="text" name="name" value="Барсик" placeholder="Укажите имя" id="name"
-                required>
-            </li>
-            <li class="form__data-item">
-              <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form__field" type="number" name="weight" value="7" placeholder="Укажите вес"
-                id="weight" min="0" max="50">
-            </li>
-            <li class="form__data-item">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="form__field" type="number" name="age" value="7"
-                placeholder="Укажите возраст" id="age" min="0" max="30">
-            </li>
-          </ul>
-
-
-
-          <ul class="form__list form__program">
-            <li class="form__item form__item">
-              <label class="form__label" for="slimming">
-                <input class="form__input" type="radio" name="program" id="slimming" value="slimming"
-                  checked>
-
-                <span class="form__text">Похудение</span>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="weight-gain">
-                <input class="form__input" type="radio" name="program" id="weight-gain"
-                  value="weight-gain">
-
-                <span class="form__text">Набор массы</span>
-
-              </label>
-            </li>
-            <li class="form__program-item">
-              <label class="form__label" for="advice">
-                <input class="form__input" type="radio" name="program" id="advice"
-                  value="advice">
-
-                <span class="control-group-text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+          <fieldset class="form-fieldset">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name">Имя:*</label>
+                <input class="form__field" type="text" name="name" value="Барсик" placeholder="Укажите имя" id="name"
+                  required>
+              </li>
+              <li class="form__data-item">
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input class="form__field" type="number" name="weight" value="7" placeholder="Укажите вес" id="weight"
+                  min="0" max="50">
+              </li>
+              <li class="form__data-item">
+                <label class="form__label" for="age">Возраст (лет):</label>
+                <input class="form__field" type="number" name="age" value="7" placeholder="Укажите возраст" id="age"
+                  min="0" max="30">
+              </li>
+            </ul>
+          </fieldset>
 
 
+          <fieldset class="form-fieldset">
+            <ul class="form__list form__program">
+              <li class="form__item form__item">
+                <label class="form__label" for="slimming">
+                  <input class="form__input--radio" type="radio" name="program" id="slimming" value="slimming" checked>
 
-          <fieldset class="form__contacts__wrapper">
+                  <span class="form__text">Похудение</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="weight-gain">
+                  <input class="form__input--radio" type="radio" name="program" id="weight-gain" value="weight-gain">
+
+                  <span class="form__text">Набор массы</span>
+
+                </label>
+              </li>
+              <li class="form__program-item">
+                <label class="form__label" for="advice">
+                  <input class="form__input--radio" type="radio" name="program" id="advice" value="advice">
+
+                  <span class="form__text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+
+          <fieldset class="form__fieldset">
             <legend class="form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</legend>
             <ul class="form__list form__contacts-list">
               <li class="form__contacts-item">
                 <label class="form__label" for="email">E-mail:*</label>
-                <input class="form__field" type="email" name="mail" value="kuklachev@gmail.com"
-                  placeholder="email" id="email" required>
+                <input class="form__field" type="email" name="mail" value="kuklachev@gmail.com" placeholder="email"
+                  id="email" required>
               </li>
               <li class="form__contacts-item">
                 <label class="form__label" for="number">Телефон:*</label>
@@ -117,45 +116,41 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__comment-wrapper">
-            <legend class="form__comment-title">Комментарий</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Комментарий</legend>
             <textarea class="form__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"
               id="message">
                             </textarea>
           </fieldset>
 
-          <fieldset class="form__additional-group-wrapper form__additional-group">
-
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Дополнительно</legend>
 
             <ul class="form__list form__additional-list form__additional-list--checkbox">
               <li class="form__additional-item">
                 <label class="form__label" for="sweetener">
-                  <input class="form__input" type="checkbox" name="sweetener"
-                    id="sweetener" checked>
+                  <input class="form__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
 
                   <span class="form__text">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__additional-item">
                 <label class="form__label" for="water">
-                  <input class="form__input" type="checkbox" name="water"
-                    id="water">
+                  <input class="form__input--checkbox" type="checkbox" name="water" id="water">
 
                   <span class="form__text">Питьевая вода</span>
                 </label>
               </li>
               <li class="form__additional-item">
                 <label class="form__label" for="milk">
-                  <input class="form__input" type="checkbox" name="milk"
-                    id="milk">
+                  <input class="form__input--checkbox" type="checkbox" name="milk" id="milk">
 
                   <span class="form__text">Молоко</span>
                 </label>
               </li>
               <li class="form__additional-item">
                 <label class="form__label" for="vitamins">
-                  <input class="visually-hidden form__additional-field form__input" type="checkbox" name="vitamins"
-                    id="vitamins">
+                  <input class="form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
 
                   <span class="form__text">Витамины</span>
                 </label>
