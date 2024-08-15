@@ -1,49 +1,49 @@
 .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary-color;
-    color: $text-primary-color;
-    text-decoration: none;
-    font-family: $primary-font;
-    text-transform: uppercase;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  color: $text-primary-color;
+  text-decoration: none;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $size-md;
+  line-height: 20px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition:
+    background-color $animation-duration,
+    color $animation-duration;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+    color: $text-secondary-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ebebeb;
+      color: $text-secondary-color;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
     font-size: $size-md;
     line-height: 20px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition:
-      background-color $animation-duration,
-      color $animation-duration;
-  
-    &:hover,
-    &:focus {
-      background-color: #5eaa2f;
-    }
-  
-    &:active {
-      background-color: #5eaa2f;
-      color: rgba(255, 255, 255, 0.3);
-    }
-  
-    &--secondary {
-      background-color: $secondary-color;
-      color: $text-secondary-color;
-  
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: #ebebeb;
-        color: $text-secondary-color;
-      }
-    }
   }
-  
-  @media (min-width: $tablet-width) {
-    .button {
-      font-size: $size-md;
-      line-height: 20px;
-    }
-  }
+}
