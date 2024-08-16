@@ -1,0 +1,50 @@
+.program-selection {
+  margin-bottom: 32px;
+}
+
+.program-selection__title {
+  @include header-2;
+  font-size: $size-xl;
+  line-height: 36px;
+  margin: 27px 0 37px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.program-selection__description {
+  font-family: $primary-font;
+  font-size: $size-sm;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__title {
+    font-size: $size-xxl;
+    line-height: 60px;
+    margin-top: 51px;
+    margin-bottom: 55px;
+  }
+
+  .program-selection__description {
+    font-size: $size-lg;
+    line-height: 30px;
+    width: 340px;
+    margin-bottom: 65px;
+  }
+
+  .program-selection {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection__title {
+    margin-top: 60px;
+  }
+
+  .program-selection {
+    margin-bottom: 81px;
+  }
+}
