@@ -1,13 +1,13 @@
+.custom-checkbox-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
 .custom-checkbox-wrapper__label {
   font-family: $primary-font;
   font-size: $size-md;
   margin-left: 45px;
   text-transform: uppercase;
-}
-
-.custom-checkbox-wrapper {
-  position: relative;
-  cursor: pointer;
 }
 
 .custom-checkbox-wrapper__custom-checkbox {

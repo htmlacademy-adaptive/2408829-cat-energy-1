@@ -13,13 +13,3 @@
     padding: 0 110px;
   }
 }
-
-.container--increased {
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}
