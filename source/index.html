@@ -131,15 +131,17 @@
             по
             16
             часов в день. </p>
-          <div class="stats-list">
-            <div class="stats-list__item">
-              <span class="stats-list__number">5 кг</span>
-              <span class="stats-list__description">снижение веса</span>
-            </div>
-            <div class="stats-list__item">
-              <span class="stats-list__number">60 дней</span>
-              <span class="stats-list__description">затрачено времени</span>
-            </div>
+          <div class="example__stats">
+            <ul class="stats-list">
+              <li class="stats-list__item">
+                <span class="stats-list__number">5 кг</span>
+                <span class="stats-list__description">снижение веса</span>
+              </li>
+              <li class="stats-list__item">
+                <span class="stats-list__number">60 дней</span>
+                <span class="stats-list__description">затрачено времени</span>
+              </li>
+            </ul>
             <p class="example__total">Затраты на питание: <span class="example__total-number">15 000 руб.</span></p>
           </div>
         </div>
@@ -156,6 +158,8 @@
             <picture>
               <source media="(min-width: 768px)"
                 srcset="./img/curtain/tablet-before.png 1x, ./img/curtain/tablet-before@2x.png 2x" type="image/png">
+              <source srcset="./img/curtain/mobile-before.webp 1x, ./img/curtain/mobile-before@2x.webp 2x"
+                type="image/webp">
               <img srcset="./img/curtain/mobile-before@2x.png 2x" src="./img/curtain/mobile-before.png"
                 class="slider-comparison__image slider-comparison__image--first" width="280" height="256"
                 alt="Кот Борис до еды Cat Energy">
@@ -165,6 +169,8 @@
             <picture>
               <source media="(min-width: 768px)"
                 srcset="./img/curtain/tablet-after.png 1x, ./img/curtain/tablet-after@2x.png 2x" type="image/png">
+              <source srcset="./img/curtain/mobile-after.webp 1x, ./img/curtain/mobile-after@2x.webp 2x"
+                type="image/webp">
               <img srcset="./img/curtain/mobile-after@2x.png 2x" src="./img/mobile-after.png"
                 class="slider-comparison__image slider-comparison__image--second" width="280" height="256"
                 alt="Кот Борис после еды Cat Energy">
@@ -173,7 +179,6 @@
         </div>
       </div>
     </section>
-
     <section class="map">
       <div class="map__container">
         <h2 class="visually-hidden">Контактная информация</h2>
