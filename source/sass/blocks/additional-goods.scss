@@ -60,7 +60,7 @@
 .additional-goods__volume,
 .additional-goods__price {
   @include mp0;
-  font-family: $alternate-font;
+  font-family: $secondary-font;
   font-size: $size-sm;
   line-height: 14px;
 }
@@ -110,7 +110,7 @@
 
 .additional-goods__banner-description {
   @include mp0;
-  font-family: $alternate-font;
+  font-family: $secondary-font;
   font-size: $size-md;
   line-height: 20px;
   color: $text-primary-color;
