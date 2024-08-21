@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 33px;
   margin-bottom: 11px;
+  list-style: none;
+  padding: 0;
 }
 
 .stats-list__number {
@@ -20,7 +22,7 @@
 .stats-list__description {
   @include mp0;
   display: block;
-  font-family: $alternate-font;
+  font-family: $secondary-font;
   font-size: $size-xs;
   line-height: 12px;
   color: $text-secondary-color;
