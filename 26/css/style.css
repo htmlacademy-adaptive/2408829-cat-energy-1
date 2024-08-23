@@ -1352,7 +1352,7 @@ body {
 }
 
 .map__actual-map {
-  background: #ffffff url("../../img/map-mobile.jpg") no-repeat center center/cover;
+  background: #ffffff url("../img/map-mobile.jpg") no-repeat center center/cover;
   height: 362px;
   width: 100%;
   border: 0;
@@ -1360,7 +1360,7 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .map__actual-map {
-    background: #ffffff url("../../img/map-mobile.jpg") no-repeat center center/cover;
+    background: #ffffff url("../img/map-mobile.jpg") no-repeat center center/cover;
   }
 }
 
