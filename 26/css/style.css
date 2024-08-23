@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #68b738d9;
+  background-color: #68b738;
   color: #ffffff;
   text-decoration: none;
   font-family: "Oswald", "Arial", sans-serif;
@@ -179,7 +179,7 @@ body {
 }
 @media (max-width: 767px) {
   .hero__wrapper::after {
-    background-color: #68b738d9;
+    background-color: #68b738;
     opacity: 85%;
   }
 }
@@ -259,7 +259,7 @@ body {
 
   .hero::after {
     z-index: -2;
-    background-color: #68b738d9;
+    background-color: #68b738;
     background-image: url("../img/hero/index-background-desktop.jpg");
     background-size: cover;
     background-position: center center;
@@ -273,7 +273,7 @@ body {
 @media (min-width: 1440px) {
   .hero::before {
     z-index: -1;
-    background-color: #68b738d9;
+    background-color: #68b738;
     opacity: 0.85;
   }
 }
@@ -516,7 +516,7 @@ body {
     position: absolute;
     bottom: -7px;
     left: 0;
-    background-color: #68b738d9;
+    background-color: #68b738;
   }
 }
 @media (min-width: 1440px) {
@@ -591,7 +591,7 @@ body {
   height: 50px;
   content: "";
   position: absolute;
-  background-color: #68b738d9;
+  background-color: #68b738;
   border-radius: 50%;
   left: -70px;
   top: -5px;
@@ -829,7 +829,7 @@ body {
   top: -1px;
   width: 60px;
   height: 60px;
-  background-color: #68b738d9;
+  background-color: #68b738;
 }
 .features__description::after {
   content: "";
@@ -1250,13 +1250,13 @@ body {
   pointer-events: none;
 }
 .slider-comparison__curtain:hover, .slider-comparison__curtain:focus {
-  background-color: #68b738d9;
+  background-color: #68b738;
 }
 .slider-comparison__curtain:hover .slider-comparison__curtain-icon, .slider-comparison__curtain:focus .slider-comparison__curtain-icon {
-  fill: #68b738d9;
+  fill: #68b738;
 }
 .slider-comparison__curtain:hover .slider-comparison__button, .slider-comparison__curtain:focus .slider-comparison__button {
-  border: 2px solid #68b738d9;
+  border: 2px solid #68b738;
 }
 .slider-comparison__curtain:active {
   background-color: rgba(94, 170, 47, 0.4);
@@ -1467,10 +1467,10 @@ body {
   transition: fill 250ms, opacity 250ms;
 }
 .footer__social-icon:hover, .footer__social-icon:focus {
-  fill: #68b738d9;
+  fill: #68b738;
 }
 .footer__social-icon:active {
-  fill: #68b738d9;
+  fill: #68b738;
   opacity: 0.3;
 }
 
@@ -1509,7 +1509,7 @@ body {
   align-items: center;
 }
 .footer__html-academy-logo:hover .footer__html-academy-logo-icon, .footer__html-academy-logo:focus .footer__html-academy-logo-icon {
-  fill: #68b738d9;
+  fill: #68b738;
 }
 .footer__html-academy-logo:active {
   opacity: 0.3;
@@ -1519,7 +1519,7 @@ body {
   transition: opacity 250ms, fill 250ms;
 }
 .footer__html-academy-logo-icon:hover, .footer__html-academy-logo-icon:focus {
-  fill: #68b738d9;
+  fill: #68b738;
 }
 .footer__html-academy-logo-icon:active {
   opacity: 0.3;
@@ -1940,7 +1940,7 @@ body {
   height: 2px;
   width: 50%;
   left: 50%;
-  background-color: #68b738d9;
+  background-color: #68b738;
   position: absolute;
   top: 14px;
   z-index: -1;
@@ -2018,7 +2018,7 @@ body {
   width: 100%;
   min-height: 290px;
   padding: 187px 61px 43px 58px;
-  background-color: #68b738d9;
+  background-color: #68b738;
   text-align: center;
   position: relative;
   background-image: -webkit-image-set(url("../img/catalog-banner/catalog-banner-mobile.jpg") type("image/jpg") 1x, url("../img/catalog-banner/catalog-banner-mobile@2x.jpg") type("image/jpg") 2x);
@@ -2031,7 +2031,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #68b738d9;
+  background-color: #68b738;
   top: 0;
   left: 0;
   opacity: 0.85;
@@ -2378,7 +2378,7 @@ body {
   outline: 2px solid #444444;
 }
 .form__field-input:focus + .form__field-icon {
-  stroke: #68b738d9;
+  stroke: #68b738;
 }
 .form__field-input--error {
   outline: 2px solid #ff8282;
@@ -2451,7 +2451,7 @@ body {
   content: "";
   width: 13px;
   height: 13px;
-  background-color: #68b738d9;
+  background-color: #68b738;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2464,7 +2464,7 @@ body {
   height: 2px;
   width: 50%;
   left: 50%;
-  background-color: #68b738d9;
+  background-color: #68b738;
   position: absolute;
   top: 14px;
   z-index: -1;
