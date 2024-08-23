@@ -85,10 +85,10 @@
 
   .map__actual-map {
     height: 400px;
-    background: #ffffff url("../../img/map-tablet.jpg") no-repeat center center / cover;
+    background: #ffffff url("../img/map-tablet.jpg") no-repeat center center / cover;
 
     @media (min-resolution: 2dppx) {
-      background: #ffffff url("../../img/map-tablet@2x.jpg") no-repeat center center / cover;
+      background: #ffffff url("../img/map-tablet@2x.jpg") no-repeat center center / cover;
     }
   }
 }
@@ -126,10 +126,10 @@
     position: absolute;
     left: 0;
     width: 100%;
-    background: #ffffff url("../../img/map-desktop.jpg") no-repeat center center / cover;
+    background: #ffffff url("../img/map-desktop.jpg") no-repeat center center / cover;
 
     @media (min-resolution: 2dppx) {
-      background: #ffffff url("../../img/map-desktop@2x.jpg") no-repeat center center / cover;
+      background: #ffffff url("../img/map-desktop@2x.jpg") no-repeat center center / cover;
     }
   }
 }
