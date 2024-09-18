@@ -5,8 +5,8 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
-WebPconst
-createWebp = () => {
+//WebPconst
+export const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(squoosh({
      webp: {}
