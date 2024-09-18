@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import squoosh from 'gulp-libsquoosh';
 
 //WebPconst
 export const createWebp = () => {
