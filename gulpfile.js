@@ -5,6 +5,15 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
+WebPconst
+createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh({
+     webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
+}
+
 // Styles
 
 export const styles = () => {
