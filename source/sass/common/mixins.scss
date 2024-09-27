@@ -22,12 +22,12 @@
 
 @mixin header-3 {
   @include mp0;
-  font-family: $primary-font;
-  font-size: $size-xl;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
   line-height: 36px;
 
-  @media (min-width: $desktop-width) {
-    font-size: $size-xxl;
+  @media (min-width: 1440px) {
+    font-size: 60px;
     line-height: 60px;
   }
 }

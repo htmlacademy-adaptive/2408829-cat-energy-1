@@ -7,14 +7,12 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
 export const styles = () => {
-return gulp.src('source/sass/style.scss', { sourcemaps: true })
+return gulp.src('source/**/*.scss', { sourcemaps: true })
   .pipe(plumber())
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss([
@@ -34,7 +32,7 @@ return gulp.src('source/*.html')
 
 // Scripts
 const scripts = () => {
-return gulp.src('source/js/script.js')
+return gulp.src('source/js/*.js')
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
 }
@@ -60,23 +58,24 @@ return gulp.src('source/img/**/*.{png,jpg}')
 }
 
 // SVG
-const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
-}
+//const svg = () =>
+//gulp.src(['source/img/*.svg','source/img/sprite.svg', 'source/img/**/*.svg', 'source/img/icons/*.svg'])
+//  .pipe(svgo())
+//  .pipe(gulp.dest('build/img'));const sprite = () => {
+//  return gulp.src('source/img/**/*.svg')
+//    .pipe(svgo())
+//    .pipe(svgstore({
+//      inlineSvg: true
+//    }))
+//    .pipe(rename('sprite.svg'))
+//    .pipe(gulp.dest('build/img'));
+//}
 
 // Copy
 const copy = (done) => {
 gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/**/*.{woff2,woff}',
+  'source/img/**/*.svg',
   'source/*.ico',
 ], {
   base: 'source'
@@ -125,8 +124,6 @@ clean,
     styles,
     html,
     scripts,
-    svg,
-    sprite,
     createWebp
   ),
 );
@@ -140,8 +137,6 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    svg,
-    sprite,
     createWebp
   ),
   gulp.series(

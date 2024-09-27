@@ -7,7 +7,7 @@
     height: 2px;
     width: 50%;
     left: 50%;
-    background-color: $primary-color;
+    background-color: #68b738;
     position: absolute;
     top: 14px;
     z-index: -1;
@@ -43,7 +43,7 @@
 
 .additional-goods__name {
   @include mp0;
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   font-size: $size-md;
   line-height: 16px;
   text-transform: uppercase;
@@ -73,7 +73,7 @@
   width: 100%;
   min-height: 290px;
   padding: 187px 61px 43px 58px;
-  background-color: $primary-color;
+  background-color: #68b738;
   text-align: center;
   position: relative;
   background-image: image-set(
@@ -88,7 +88,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: $primary-color;
+    background-color: #68b738;
     top: 0;
     left: 0;
     opacity: 0.85;

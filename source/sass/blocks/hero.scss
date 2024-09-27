@@ -21,12 +21,12 @@
   font-size: $size-xl;
   line-height: 36px;
   font-weight: 400;
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 22px;
 }
 
 .hero__subtitle {
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: $size-sm;
 }
@@ -70,7 +70,7 @@
   }
 
   .hero__wrapper::after {
-    background-color: $primary-color;
+    background-color: #68b738;
     opacity: 85%;
   }
 }
@@ -156,7 +156,7 @@
 
   .hero::after {
     z-index: -2;
-    background-color: $primary-color;
+    background-color: #68b738;
     background-image: url("../img/hero/index-background-desktop.jpg");
     background-size: cover;
     background-position: center center;
@@ -168,7 +168,7 @@
 
   .hero::before {
     z-index: -1;
-    background-color: $primary-color;
+    background-color: #68b738;
     opacity: 0.85;
   }
 

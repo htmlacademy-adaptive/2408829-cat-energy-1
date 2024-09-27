@@ -54,7 +54,7 @@
 }
 
 .form__field-name {
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   color: $text-secondary-color;
   text-transform: uppercase;
   margin-right: 14px;
@@ -75,7 +75,7 @@
   padding: 13px 14px;
   font-size: $size-md;
   line-height: 18px;
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   color: $text-secondary-color;
   text-transform: uppercase;
   flex-grow: 1;
@@ -91,7 +91,7 @@
     outline: 2px solid $text-secondary-color;
 
     & + .form__field-icon {
-      stroke: $primary-color;
+      stroke: #68b738;
     }
   }
 
@@ -135,7 +135,7 @@
 }
 
 .form__radio-label {
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   color: $text-secondary-color;
   font-size: $size-md;
   line-height: 18px;
@@ -166,7 +166,7 @@
   content: "";
   width: 13px;
   height: 13px;
-  background-color: $primary-color;
+  background-color: #68b738;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -179,7 +179,7 @@
   height: 2px;
   width: 50%;
   left: 50%;
-  background-color: $primary-color;
+  background-color: #68b738;
   position: absolute;
   top: 14px;
   z-index: -1;
@@ -189,7 +189,7 @@
   @include mp0;
   font-size: 24px;
   line-height: 26px;
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 36px;
   text-wrap: wrap;
   position: relative;
