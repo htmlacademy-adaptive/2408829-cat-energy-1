@@ -11,7 +11,7 @@
 .main-header__logo {
   display: flex;
   align-items: center;
-  transition: opacity $animation-duration;
+  transition: opacity 250ms;
 
   &:hover {
     opacity: 0.8;
@@ -33,7 +33,7 @@
   margin-left: 56px;
 }
 
-@media (max-width: calc($tablet-width - 1px)) {
+@media (max-width: calc(768px - 1px)) {
   .main-header--no-js {
     flex-direction: column;
     padding: 20px 0 0 0;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .main-header {
     width: 704px;
     margin: 10px auto;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   .main-header {
     margin: 40px auto;
     width: 1220px;

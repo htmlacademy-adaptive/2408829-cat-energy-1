@@ -1,10 +1,10 @@
 .footer {
-  background-color: $secondary-color;
+  background-color: #f2f2f2;
 }
 
 .footer__logo {
   fill: #111111;
-  transition: fill $animation-duration;
+  transition: fill 250ms;
 
   &:hover,
   &:focus {
@@ -19,8 +19,8 @@
 .footer__social-icon {
   fill: #666666;
   transition:
-    fill $animation-duration,
-    opacity $animation-duration;
+    fill 250ms,
+    opacity 250ms;
 
   &:hover,
   &:focus {
@@ -44,7 +44,9 @@
 }
 
 .footer__social-list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   gap: 28px;
   position: relative;
@@ -53,15 +55,15 @@
 }
 
 .footer__html-academy-logo {
-  font-family: $secondary-font;
-  font-size: $size-md;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: $text-secondary-color;
+  color: #444444;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  transition: opacity $animation-duration;
+  transition: opacity 250ms;
   gap: 23px;
   align-items: center;
 
@@ -77,8 +79,8 @@
 
 .footer__html-academy-logo-icon {
   transition:
-    opacity $animation-duration,
-    fill $animation-duration;
+    opacity 250ms,
+    fill 250ms;
 
   &:hover,
   &:focus {
@@ -90,7 +92,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .footer__wrapper {
     padding: 59px 30px 55px;
     flex-direction: row;
@@ -109,7 +111,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   .footer__wrapper {
     padding: 69px 110px 66px;
   }

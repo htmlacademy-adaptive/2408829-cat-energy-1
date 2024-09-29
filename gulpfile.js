@@ -12,7 +12,7 @@ import browser from 'browser-sync';
 
 // Styles
 export const styles = () => {
-return gulp.src('source/**/*.scss', { sourcemaps: true })
+return gulp.src('source/**/**/*.scss', { sourcemaps: true })
   .pipe(plumber())
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss([

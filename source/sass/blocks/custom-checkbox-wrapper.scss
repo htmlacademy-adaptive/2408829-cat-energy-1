@@ -5,7 +5,7 @@
 
 .custom-checkbox-wrapper__label {
   font-family: "Oswald", sans-serif;
-  font-size: $size-md;
+  font-size: 16px;
   margin-left: 45px;
   text-transform: uppercase;
 }
@@ -17,7 +17,7 @@
   display: block;
   top: -4px;
   position: absolute;
-  transition: border $animation-duration;
+  transition: border 250ms;
 }
 
 .custom-checkbox-wrapper__actual-checkbox:disabled ~ .custom-checkbox-wrapper__custom-checkbox,
@@ -45,7 +45,7 @@
   border: 1px solid #444444;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .custom-checkbox-wrapper__custom-checkbox {
     width: 40px;
     height: 40px;
@@ -60,12 +60,12 @@
   }
 
   .custom-checkbox-wrapper__label {
-    font-size: $size-lg;
+    font-size: 20px;
     margin-left: 60px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   // .custom-checkbox-wrapper:nth-of-type(2) {
   //   margin-left: -79px;
   // }
