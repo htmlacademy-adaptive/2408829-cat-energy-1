@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  font-size: $size-lg;
+  font-size: 20px;
 }
 
 .main-menu__items--closed {
@@ -17,7 +17,7 @@
   text-decoration: none;
   color: #000000;
   position: relative;
-  transition: opacity $animation-duration;
+  transition: opacity 250ms;
 
   &[href]:hover,
   &[href]:focus {
@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: calc($tablet-width - 1px)) {
+@media (max-width: calc(768px - 1px)) {
   .main-menu {
     position: relative;
   }
@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .main-menu {
     margin-left: 93px;
   }
@@ -131,20 +131,20 @@
     position: absolute;
     bottom: -7px;
     left: 0;
-    background-color: $primary-color;
+    background-color: #68b738;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   .main-menu__items {
-    font-size: $size-lg;
+    font-size: 20px;
     line-height: 20px;
     max-width: 680px;
     gap: 34px;
   }
 
   .main-menu__items--alternate a {
-    color: $text-primary-color;
+    color: #ffffff;
   }
 
   .main-menu__items--alternate .main-menu__item--active a::after {

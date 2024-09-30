@@ -3,8 +3,17 @@
 }
 
 .program-selection__title {
-  @include header-2;
-  font-size: $size-xl;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  font-size: 36px;
   line-height: 36px;
   margin: 27px 0 37px;
   text-align: left;
@@ -12,23 +21,23 @@
 }
 
 .program-selection__description {
-  font-family: $primary-font;
-  font-size: $size-sm;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   margin: 0 0 40px 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .program-selection__title {
-    font-size: $size-xxl;
+    font-size: 60px;
     line-height: 60px;
     margin-top: 51px;
     margin-bottom: 55px;
   }
 
   .program-selection__description {
-    font-size: $size-lg;
+    font-size: 20px;
     line-height: 30px;
     width: 340px;
     margin-bottom: 65px;
@@ -39,7 +48,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   .program-selection__title {
     margin-top: 60px;
   }

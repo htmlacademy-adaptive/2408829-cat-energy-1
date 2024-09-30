@@ -12,23 +12,24 @@
 
 .hero__title,
 .hero__subtitle {
-  @include mp0;
-  color: $text-primary-color;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
   text-align: center;
 }
 
 .hero__title {
-  font-size: $size-xl;
+  font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 22px;
 }
 
 .hero__subtitle {
-  font-family: $primary-font;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: $size-sm;
+  font-size: 14px;
 }
 
 .hero__call-to-action {
@@ -43,7 +44,7 @@
   max-width: 100%;
 }
 
-@media (max-width: calc($tablet-width - 1px)) {
+@media (max-width: calc(768px - 1px)) {
   .hero__wrapper::after,
   .hero__wrapper::before {
     content: "";
@@ -70,12 +71,12 @@
   }
 
   .hero__wrapper::after {
-    background-color: $primary-color;
+    background-color: #68b738;
     opacity: 85%;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .hero__wrapper {
     padding: 0 0 533px;
     margin-bottom: -6px;
@@ -87,14 +88,14 @@
   }
 
   .hero__title {
-    font-size: $size-xxl;
+    font-size: 60px;
     line-height: 60px;
     max-width: 420px;
     margin-bottom: 40px;
   }
 
   .hero__subtitle {
-    font-size: $size-lg;
+    font-size: 20px;
     line-height: 20px;
   }
 
@@ -106,7 +107,7 @@
 
   .hero__call-to-action {
     margin-left: 90px;
-    font-size: $size-lg;
+    font-size: 20px;
     line-height: 26px;
     width: 244px;
     min-height: 54px;
@@ -123,8 +124,8 @@
   }
 }
 
-@media (max-width: calc($desktop-width - 1px)) {
-  @media (min-width: $tablet-width) {
+@media (max-width: calc(1440px - 1px)) {
+  @media (min-width: 768px) {
     .hero__text-wrapper {
       padding: 42px 0 0 90px;
       margin-bottom: 50px;
@@ -133,7 +134,7 @@
 }
 
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1440px) {
   .hero {
     position: relative;
   }
@@ -156,7 +157,7 @@
 
   .hero::after {
     z-index: -2;
-    background-color: $primary-color;
+    background-color: #68b738;
     background-image: url("../img/hero/index-background-desktop.jpg");
     background-size: cover;
     background-position: center center;
@@ -168,7 +169,7 @@
 
   .hero::before {
     z-index: -1;
-    background-color: $primary-color;
+    background-color: #68b738;
     opacity: 0.85;
   }
 
