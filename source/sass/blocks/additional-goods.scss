@@ -18,8 +18,6 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 36px;
@@ -87,10 +85,8 @@
   background-color: #68b738;
   text-align: center;
   position: relative;
-  background-image: image-set(
-    url("../img/catalog-banner/catalog-banner-mobile.jpg") type("image/jpg") 1x,
-    url("../img/catalog-banner/catalog-banner-mobile@2x.jpg") type("image/jpg") 2x
-  );
+  background-image: image-set(url("../img/catalog-banner/catalog-banner-mobile.jpg") type("image/jpg") 1x,
+      url("../img/catalog-banner/catalog-banner-mobile@2x.jpg") type("image/jpg") 2x);
   background-position: center center;
   background-size: cover;
 
@@ -254,7 +250,7 @@
   .additional-goods__volume,
   .additional-goods__price {
     margin: 0;
-  padding: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
   }
