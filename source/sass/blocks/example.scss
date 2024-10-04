@@ -21,14 +21,14 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  margin: 3px 0 40px;
+  color: #000000;
+  font-weight: 400;
 
   @media (min-width: 1440px) {
     font-size: 60px;
     line-height: 60px;
   }
-  margin: 3px 0 40px;
-  color: #000000;
-  font-weight: 400;
 }
 
 .example__description {

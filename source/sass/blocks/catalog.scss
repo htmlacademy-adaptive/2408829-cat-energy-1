@@ -8,14 +8,14 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  line-height: 36px;
+  margin: 27px 0 41px -1px;
+  font-weight: 400;
 
   @media (min-width: 1440px) {
     font-size: 60px;
     line-height: 60px;
   }
-  line-height: 36px;
-  margin: 27px 0 41px -1px;
-  font-weight: 400;
 }
 
 .catalog__products-list {
