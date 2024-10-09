@@ -90,7 +90,7 @@
   &:focus {
     outline: 2px solid #444444;
 
-    & + .form__field-icon {
+    &+.form__field-icon {
       stroke: #68b738;
     }
   }
@@ -98,7 +98,7 @@
   &--error {
     outline: 2px solid #ff8282;
 
-    & + .form__field-icon {
+    &+.form__field-icon {
       stroke: #ff8282;
     }
   }
@@ -141,12 +141,13 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 45px;
+  margin-left: 20px;
   width: 100%;
   display: block;
 }
 
 .form__radio-input {
+  display: flex;
   position: relative;
   cursor: pointer;
 }
@@ -163,7 +164,7 @@
   transition: border 250ms;
 }
 
-.form__radio-input input:checked ~ .form__custom-radio::after {
+.form__radio-input input:checked~.form__custom-radio::after {
   content: "";
   width: 13px;
   height: 13px;
@@ -184,6 +185,9 @@
   position: absolute;
   top: 14px;
   z-index: -1;
+  width: 100%;
+  left: 0;
+  right: 10px;
 }
 
 .form__section-name {
@@ -225,9 +229,25 @@
   margin-bottom: 23px;
 }
 
-.form__actual-radio:disabled ~ .form__custom-radio,
-.form__actual-radio:disabled ~ .form__custom-radio::after,
-.form__actual-radio:disabled ~ .form__radio-label {
+.form__actual-radio {
+  margin: 0;
+  appearance: none;
+  background-image: url("../img/radiobutton.svg");
+  min-width: 40px;
+  height: 40px;
+  z-index: 2;
+  background-color: none;
+}
+
+.form__actual-radio:active, .form__actual-radio:focus-within {
+  background-image: url("../img/radiobutton-active.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.form__actual-radio:disabled~.form__custom-radio,
+.form__actual-radio:disabled~.form__custom-radio::after,
+.form__actual-radio:disabled~.form__radio-label {
   opacity: 0.3;
 }
 
@@ -235,7 +255,7 @@
   border: 1px solid #bababa;
 }
 
-.form__actual-radio:focus + .form__custom-radio {
+.form__actual-radio:focus+.form__custom-radio {
   border: 1px solid #444444;
 }
 
@@ -338,7 +358,7 @@
     top: -11px;
   }
 
-  .form__radio-input input:checked ~ .form__custom-radio::after {
+  .form__radio-input input:checked~.form__custom-radio::after {
     width: 18px;
     height: 18px;
   }
