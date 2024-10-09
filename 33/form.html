@@ -61,11 +61,11 @@
             <div class="form__fields-group">
               <div class="form__field">
                 <label class="form__field-name form__field-name--required" for="cat-name">Имя</label>
-                <input class="form__field-input" type="text" name="cat-name" id="cat-name" required value="Барсик">
+                <input class="form__field-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
               </div>
               <div class="form__field">
                 <label class="form__field-name form__field-name--required" for="cat-weight">Вес (кг)</label>
-                <input class="form__field-input" type="number" name="cat-weight" id="cat-weight" required value="7">
+                <input class="form__field-input" type="number" name="cat-weight" id="cat-weight" placeholder="7">
               </div>
               <div class="form__field">
                 <label class="form__field-name" for="cat-age">Возраст (лет)</label>
@@ -76,19 +76,19 @@
               <ul class="form__radio-group">
                 <li class="form__radio-item">
                   <label class="form__radio-input">
-                    <input class="form__actual-radio visually-hidden" type="radio" name="type" value="fat-loss" checked>
+                    <input class="form__actual-radio" type="radio" name="type" value="fat-loss" checked>
                     <span class="form__radio-label">Похудение</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-input">
-                    <input class="form__actual-radio visually-hidden" type="radio" name="type" value="mass-gain">
+                    <input class="form__actual-radio" type="radio" name="type" value="mass-gain">
                     <span class="form__radio-label">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-input">
-                    <input class="form__actual-radio visually-hidden" type="radio" name="type" value="idk">
+                    <input class="form__actual-radio" type="radio" name="type" value="idk">
                     <span class="form__radio-label">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -105,7 +105,7 @@
               <div class="form__field">
                 <label class="form__field-name form__field-name--required" for="user-mail">E-mail</label>
                 <input class="form__field-input form__field-input--email" type="email" name="user-mail" id="user-mail"
-                  required value="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com">
                 <svg class="form__field-icon form__field-icon--mail" width="17" height="14">
                   <use xlink:href="./img/sprite.svg#mail-icon" />
                 </svg>
@@ -113,7 +113,7 @@
               <div class="form__field">
                 <label class="form__field-name form__field-name--required" for="user-phone">Телефон</label>
                 <input class="form__field-input form__field-input--phone" type="tel" name="user-phone" id="user-phone"
-                  required value="8 (960) 900-60-90">
+                  placeholder="8 (960) 900-60-90">
                 <svg class="form__field-icon" width="16" height="16">
                   <use xlink:href="./img/sprite.svg#phone-icon" />
                 </svg>
@@ -127,7 +127,7 @@
             <h3 class="form__section-name form__section-name--commentary">Комментарий</h3>
             <label class="form__field-name visually-hidden" for="user-commentary">Поле для комментариев</label>
             <textarea class="form__field-input form__field-input--textarea" name="user-commentary"
-              id="user-commentary">Расскажите обо всех повадках кота</textarea>
+              id="user-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
@@ -136,22 +136,22 @@
             <h3 class="form__section-name form__section-name--additional">Дополнительно</h3>
             <div class="form__checkboxes-wrapper">
               <label class="custom-checkbox-wrapper">
-                <input class="custom-checkbox-wrapper__actual-checkbox visually-hidden" type="checkbox"
+                <input class="custom-checkbox-wrapper__actual-checkbox" type="checkbox"
                   name="additional-goods" value="sweetener">
                 <span class="custom-checkbox-wrapper__label">Cахарозаменитель</span>
               </label>
               <label class="custom-checkbox-wrapper">
-                <input class="custom-checkbox-wrapper__actual-checkbox visually-hidden" type="checkbox"
+                <input class="custom-checkbox-wrapper__actual-checkbox" type="checkbox"
                   name="additional-goods" value="drinkable-water">
                 <span class="custom-checkbox-wrapper__label">Питьевая вода</span>
               </label>
               <label class="custom-checkbox-wrapper">
-                <input class="custom-checkbox-wrapper__actual-checkbox visually-hidden" type="checkbox"
-                  name="additional-goods" value="milk">>
+                <input class="custom-checkbox-wrapper__actual-checkbox" type="checkbox"
+                  name="additional-goods" value="milk">
                 <span class="custom-checkbox-wrapper__label">Молоко</span>
               </label>
               <label class="custom-checkbox-wrapper">
-                <input class="custom-checkbox-wrapper__actual-checkbox visually-hidden" type="checkbox"
+                <input class="custom-checkbox-wrapper__actual-checkbox" type="checkbox"
                   name="additional-goods" value="vitamins">
                 <span class="custom-checkbox-wrapper__label">Витамины</span>
               </label>
