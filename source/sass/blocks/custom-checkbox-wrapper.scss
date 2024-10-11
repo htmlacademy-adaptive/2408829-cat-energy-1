@@ -28,14 +28,17 @@
 }
 
 .custom-checkbox-wrapper__actual-checkbox {
+  appearance: none;
   width: 30px;
   height: 30px;
+  border: 1px solid #CDCDCD;
 }
 
 .custom-checkbox-wrapper__actual-checkbox:checked {
   background-repeat: no-repeat;
   background-image: url("../img/icons/checkmark.svg");
-  background-size: 30px;
+  background-size: 18px 14px;
+  background-position: center;
 }
 
 .custom-checkbox-wrapper__actual-checkbox:hover ~ .custom-checkbox-wrapper__custom-checkbox {
@@ -55,6 +58,11 @@
   .custom-checkbox-wrapper__actual-checkbox {
     width: 40px;
     height: 40px;
+  }
+
+  .custom-checkbox-wrapper__actual-checkbox:checked {
+    background-size: 24px 18px;
+    background-position: center;
   }
 
   .custom-checkbox-wrapper {
