@@ -22,12 +22,12 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 22px;
 }
 
 .hero__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -71,7 +71,7 @@
   }
 
   .hero__wrapper::after {
-    background-color: #68b738;
+    background-color: rgba(104, 183, 56);
     opacity: 85%;
   }
 }

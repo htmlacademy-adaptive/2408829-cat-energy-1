@@ -17,14 +17,7 @@
 .additional-goods__title {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-
-  @media (min-width: 1440px) {
-    font-size: 60px;
-    line-height: 60px;
-  }
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 36px;
@@ -32,8 +25,13 @@
   width: fit-content;
   background-color: #ffffff;
   border-right: 20px solid #ffffff;
-  z-index: 2;
+  z-index: 3;
   font-weight: 400;
+
+  @media (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .additional-goods__list {
@@ -53,7 +51,7 @@
 .additional-goods__name {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -71,7 +69,7 @@
 .additional-goods__price {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
 }
@@ -87,10 +85,8 @@
   background-color: #68b738;
   text-align: center;
   position: relative;
-  background-image: image-set(
-    url("../img/catalog-banner/catalog-banner-mobile.jpg") type("image/jpg") 1x,
-    url("../img/catalog-banner/catalog-banner-mobile@2x.jpg") type("image/jpg") 2x
-  );
+  background-image: image-set(url("../img/catalog-banner/catalog-banner-mobile.jpg") type("image/jpg") 1x,
+      url("../img/catalog-banner/catalog-banner-mobile@2x.jpg") type("image/jpg") 2x);
   background-position: center center;
   background-size: cover;
 
@@ -122,7 +118,7 @@
 .additional-goods__banner-description {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -254,7 +250,7 @@
   .additional-goods__volume,
   .additional-goods__price {
     margin: 0;
-  padding: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
   }
