@@ -90,7 +90,7 @@
   &:focus {
     outline: 2px solid #444444;
 
-    &+.form__field-icon {
+    & + .form__field-icon {
       stroke: #68b738;
     }
   }
@@ -98,7 +98,7 @@
   &--error {
     outline: 2px solid #ff8282;
 
-    &+.form__field-icon {
+    & + .form__field-icon {
       stroke: #ff8282;
     }
   }
@@ -164,7 +164,7 @@
   transition: border 250ms;
 }
 
-.form__radio-input input:checked~.form__custom-radio::after {
+.form__radio-input input:checked ~ .form__custom-radio::after {
   content: "";
   width: 13px;
   height: 13px;
@@ -179,14 +179,12 @@
 .form__section--with-line::before {
   content: "";
   height: 2px;
-  width: 50%;
   left: 50%;
   background-color: #68b738;
   position: absolute;
   top: 14px;
   z-index: -1;
   width: 100%;
-  left: 0;
 }
 
 .form__section-name {
@@ -232,7 +230,7 @@
 .form__actual-radio {
   margin: 0;
   appearance: none;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   min-width: 30px;
   min-height: 30px;
@@ -245,9 +243,9 @@
   background-position: center;
 }
 
-.form__actual-radio:disabled~.form__custom-radio,
-.form__actual-radio:disabled~.form__custom-radio::after,
-.form__actual-radio:disabled~.form__radio-label {
+.form__actual-radio:disabled ~ .form__custom-radio,
+.form__actual-radio:disabled ~ .form__custom-radio::after,
+.form__actual-radio:disabled ~ .form__radio-label {
   opacity: 0.3;
 }
 
@@ -255,7 +253,7 @@
   border: 1px solid #bababa;
 }
 
-.form__actual-radio:focus+.form__custom-radio {
+.form__actual-radio:focus + .form__custom-radio {
   border: 1px solid #444444;
 }
 
@@ -268,7 +266,7 @@
     min-width: 40px;
     min-height: 40px;
   }
-  
+
   .form__actual-radio:checked {
     background-size: 18px 18px;
   }
@@ -367,7 +365,7 @@
     top: -11px;
   }
 
-  .form__radio-input input:checked~.form__custom-radio::after {
+  .form__radio-input input:checked ~ .form__custom-radio::after {
     width: 18px;
     height: 18px;
   }
@@ -503,6 +501,6 @@
 
 @media (max-width: 767px) {
   .form__section-name {
-    margin: 0 0 34px -20px
+    margin: 0 0 34px -20px;
   }
 }

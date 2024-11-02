@@ -59,15 +59,11 @@
   }
 
   .hero__wrapper::before {
-    background-image: url("../img/hero/index-background-mobile.jpg");
+    background-image: image-set(url("../img/hero/index-background-mobile.jpg") 1x,
+        url("../img/hero/index-background-mobile@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-size: 320px 302px;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/index-background-mobile@2x.jpg");
-      background-size: 320px 302px;
-    }
   }
 
   .hero__wrapper::after {
